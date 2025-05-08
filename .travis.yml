@@ -26,6 +26,9 @@ matrix:
   allow_failures:
     - jdk: openjdk-ea
 
+before_install:
+  - rm -f .github/workflows/empty.yml
+  
 script:
   - mvn
 
